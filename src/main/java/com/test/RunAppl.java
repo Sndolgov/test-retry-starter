@@ -1,6 +1,6 @@
 package com.test;
 
-import com.test.service.TestServiceImpl;
+import com.test.service.TestService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -14,8 +14,8 @@ public class RunAppl {
 
 //        for (String name :run.getBeanDefinitionNames())
 //            System.out.println(name);
-        TestServiceImpl testServiceImpl = run.getBean(TestServiceImpl.class);
-        System.out.println(testServiceImpl.test());
+        TestService testService = run.getBean(TestService.class);
+        System.out.println(testService.test());
     }
 
     // set yourself bean instead the bean from starter
