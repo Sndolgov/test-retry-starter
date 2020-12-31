@@ -29,6 +29,11 @@
             <artifactId>retry</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.starter</groupId>
+            <artifactId>registrar</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
