@@ -12,8 +12,8 @@ public class RunAppl {
         SpringApplicationBuilder builder = new SpringApplicationBuilder(RunAppl.class);
         ConfigurableApplicationContext run = builder.headless(false).run(args);
 
-        for (String name :run.getBeanDefinitionNames())
-            System.out.println(name);
+//        for (String name :run.getBeanDefinitionNames())
+//            System.out.println(name);
         TestService testService = run.getBean(TestService.class);
         System.out.println(testService.test());
     }
